@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>calcul_tps</title>
+</head>
+<body>
+  
+  <div id="box1"> 
+    <div class="titre">Calcul plage horaire</div>        
+    <div align="center" id="heure" > 
+      <div class="time-input">       	
+      <label >Heure début</label>
+      <input id="starttime" type="time" name="start-time" class="largeur" min="06:00" max="19:00" required >
+      </div>
+      <div class="time-input">
+      <label>Heure fin</label>
+      <input id="endtime" type="time" name="end-time" class="largeur" min="06:00" max="19:00" required >
+      </div>
+      <br><br>
+      <button onclick="calcul()">Calculer</button>
+    </div>
+
+    <div class="resultat">      
+
+      <input placeholder="résultat"  id="duree" type="text" name="duree" size="2"> 
+    </div>
+  </div>
+</body>
+</html>
